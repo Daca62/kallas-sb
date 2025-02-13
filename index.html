@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Kallas</title>
+    <script defer src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="nav" id="nav">
+        <i class="fa-solid fa-cart-shopping" id="btn-cart"></i>
+        <a href="./about.html">
+            <h2 class="about-link">About Us</h2>
+        </a>
+        <h1>Kallas SB</h1>
+    </div>
+
+    <div class="container" id="container">
+        <div class="main" id="main">
+            <div class="box" id="box">
+                <img src="./images/cocoa butter.jpeg" alt="Cocoa butter" class="product-img">
+                <h3 class="product-title" data-title="COCOA BUTTER">Cocoa Butter</h3>
+                <span class="price">€1.90</span>
+                <button class="btn add-cart" id="btn-buy">Buy</button>
+            </div>
+            <div class="box" id="box">
+                <img src="./images/vitamin_c.png" alt="Vitamin C" class="product-img">
+                <h3 class="product-title" data-title="VITAMIN C">Vitamin C</h3>
+                <span class="price">€3.00</span>
+                <button class="btn add-cart" id="btn-buy">Buy</button>
+            </div>
+            <div class="box" id="box">
+                <img src="./images/dextrose.png" alt="Dextrose" class="product-img">
+                <h3 class="product-title" data-title="DEXTROSE">Dextrose</h3>
+                <span class="price">€1.00</span>
+                <button class="btn add-cart" id="btn-buy">Buy</button>
+            </div>
+            <div class="box" id="box">
+                <img src="./images/pottassium sorbate.jpeg" alt="Potassium sorbate" class="product-img">
+                <h3 class="product-title" data-title="POTASSIUM SORBATE">Potassium Sorbate</h3>
+                <span class="price">€3.20</span>
+                <button class="btn add-cart" id="btn-buy">Buy</button>
+            </div>
+            <div class="box" id="box">
+                <img src="./images/calcium_propionate.png" alt="Calcium propionate" class="product-img">
+                <h3 class="product-title" data-title="CALCIUM PROPIONATE">Calcium Propionate</h3>
+                <span class="price">€1.65</span>
+                <button class="btn add-cart" id="btn-buy">Buy</button>
+            </div>
+            <div class="box" id="box">
+                <img src="./images/potato starch.jpeg" alt="Potato starch" class="product-img">
+                <h3 class="product-title" data-title="POTATO STARCH">Potato Starch</h3>
+                <span class="price">€1.15</span>
+                <button class="btn add-cart" id="btn-buy">Buy</button>
+            </div>
+            <div class="box" id="box">
+                <img src="./images/citric_acid.png" alt="Citric acid" class="product-img">
+                <h3 class="product-title" data-title="CITRIC ACID">Citric Acid</h3>
+                <span class="price">€0.94</span>
+                <button class="btn add-cart" id="btn-buy">Buy</button>
+            </div>
+            <div class="box" id="box">
+                <img src="./images/skimmed_milk_powder.png" alt="Skimmed milk powder" class="product-img">
+                <h3 class="product-title" data-title="SKIMMED MILK POWDER">Skimmed Milk Powder</h3>
+                <span class="price">€2.80</span>
+                <button class="btn add-cart" id="btn-buy">Buy</button>
+            </div>
+            <div class="box" id="box">
+                <img src="./images/palm grease.jpeg" alt="Palm grease" class="product-img">
+                <h3 class="product-title" data-title="PALM GREASE">Palm Grease</h3>
+                <span class="price">€1.45</span>
+                <button class="btn add-cart" id="btn-buy">Buy</button>
+            </div>
+            <div class="box" id="box">
+                <img src="./images/soy izolate.jpeg" alt="Soy isolate" class="product-img">
+                <h3 class="product-title" data-title="SOY ISOLATE">Soy Isolate</h3>
+                <span class="price">€2.85</span>
+                <button class="btn add-cart" id="btn-buy">Buy</button>
+            </div>
+            <div class="box" id="box">
+                <img src="./images/whey powder.jpeg" alt="Whey powder" class="product-img">
+                <h3 class="product-title" data-title="WHEY POWDER">Whey Powder</h3>
+                <span class="price">€0.75</span>
+                <button class="btn add-cart" id="btn-buy">Buy</button>
+            </div>
+            <div class="box" id="box">
+                <img src="./images/trisodium_citrate.png" alt="Trisodium citrate" class="product-img">
+                <h3 class="product-title" data-title="TRISODIUM CITRATE">Trisodium Citrate</h3>
+                <span class="price">€0.90</span>
+                <button class="btn add-cart" id="btn-buy">Buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="cart" id="cart">
+        <h2 class="cart-title">Your Order</h2>
+        <div class="cart-content">
+
+        </div>
+        <div class="firm-name" id="firm-name">
+            <h2 class="firm-title">Company Name</h2>
+            <input type="text" placeholder="Your Company Name..." class="firm-input" id="firm-input">
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">€0</div>
+        </div>
+        <button class="btn-order" id="btn-order">Order Now</button>
+        <div class="close-cart" id="close-cart">X</div>
+    </div>
+
+
+
+
+
+    <footer>Copyright © Danilo Dangubic</footer>
+</body>
+
+</html>
